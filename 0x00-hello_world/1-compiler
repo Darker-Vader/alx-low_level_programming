@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc $CFILE -S -o run.o
+gcc $CFILE -c -o run.o
