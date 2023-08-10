@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <unistd.h>
+#define MESSAGE "and that piece of art is useful\" - Dora Korpar, 2015-10-19"
 /**
  * main - this is the entry point
  *
@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	fprintf(stderr, "%s\n", MESSAGE);
 	return (1);
 }
