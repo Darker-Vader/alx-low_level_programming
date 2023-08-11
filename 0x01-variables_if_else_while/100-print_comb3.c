@@ -9,31 +9,23 @@
  */
 int main(void)
 {
-	int o = '0';
-	int t = '0';
+	int o, t;
 
-	while (o <= '9')
+	for (o = '0' ; o < '9' ; o++)
 	{
-		while (t <= '9')
+		for (t = o + 1 ; t <= '9' ; t++)
 		{
-			if (!(o > t) || o == t)
+			if (t != o)
 			{
 				putchar(o);
 				putchar(t);
 				if (o == '8' && t == '9')
-				{
-					putchar('\n');
-				}
-				else
-				{
-					putchar(',');
-					putchar(' ');
-				}
+					continue;
+				putchar(',');
+				putchar(' ');
 			}
-			t++;
 		}
-		t = '0';
-		o++;
 	}
-return (0);
+	putchar('\n');
+	return (0);
 }
