@@ -18,8 +18,8 @@ int main(void)
 			for (t = 0 ; t <= 10 ; t++)
 			{
 				putchar(o + '0');
-				putchar(d + '0');
-				putchar(t + '0');
+				putchar(d + '1');
+				putchar(t + '2');
 				putchar(',');
 				putchar(' ');
 			}
