@@ -10,14 +10,16 @@ int main(void)
 	int o;
 	int t;
 
-	for (o = 0 ; o < 10 ; o++)
+	for (o = 0 ; o < 9 ; o++)
 	{
-		for (t = 0 ; t < 10 ; t++)
+		for (t = o + 1 ; t <= 9 ; t++)
 		{
-			if (o != t)
+			if (t != o)
 			{
-				putchar(o + '0');
-				putchar(t + '0');
+				putchar(o);
+				putchar(t);
+				if (o == 8 && t == 9)
+					continue;
 				putchar(',');
 				putchar(' ');
 			}
