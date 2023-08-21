@@ -2,10 +2,11 @@
 #include <stdio.h>
 
 /**
-*main - check the code 
-*
-*Return: Always 0.
-*/
+ *main - check the code 
+ *reset_to_98 - called function
+ *
+ *Return: Always 0.
+ */
 int main(void)
 {
 	int n;
